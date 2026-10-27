@@ -21,7 +21,7 @@
 }
 
 /* Style the links to look like physical buttons */
-.nav-btn {
+.nav-button {
     display: inline-block; 
     text-decoration: none; 
     color: black; 
