@@ -1,0 +1,57 @@
+/* Base font setup for the nav */
+.navbar {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    padding: 15px; 
+    background-color: #f2f2f7; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.nav-logo {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Container holding the links */
+.nav-links {
+    display: flex; 
+    align-items: center; 
+    gap: 15px; /* Adjust space between buttons */
+}
+
+/* Style the links to look like physical buttons */
+.nav-btn {
+    display: inline-block; 
+    text-decoration: none; 
+    color: black; 
+    background-color: #e5e5ea; 
+    padding: 12px 24px; 
+    border-radius: 10px; 
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover effect for the links */
+.nav-btn:hover {
+    background-color: #d1d1d6;
+}
+
+/* Main Login/Register Action Button on the right */
+.nav-action-btn {
+    font-size: 16px; 
+    width: 200px; 
+    height: 65px; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    background-color: black; 
+    color: white; 
+    border: none;
+    font-weight: bold;
+    transition: opacity 0.2s ease;
+}
+
+/* Hover effect for the main button */
+.nav-action-btn:hover {
+    opacity: 0.8;
+}
