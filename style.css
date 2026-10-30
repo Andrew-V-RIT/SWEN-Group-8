@@ -9,6 +9,14 @@ nav {
     justify-content: space-between;
     margin: 20px auto;
 }
+
+.navbar {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 20px;
+}
 .login_button {
     display: inline-block;
     width: 200px;
@@ -37,16 +45,8 @@ input {
 a {
     text-decoration: none;
     color: black;
-    align-self: center;
 }
 
-.form {
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f2f5;
-}
 form {
     display: flex;
     flex-direction: column;
