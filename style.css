@@ -1,0 +1,81 @@
+h2 {
+    background-color: lightslategray;
+}
+nav {
+    padding: 15px;
+    background-color: lightslategray;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.login_button {
+    display: inline-block;
+    width: 200px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 15px;
+    font-size: larger;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.home{
+    text-decoration: none;
+    font-style: bold;
+    color:black
+}
+input {
+    border-radius: 5px;
+    fill: gray ;
+    width: 200px;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    align-self: center;
+}
+
+.form {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 2px solid black;
+    background-color: rgb(118, 255, 202);
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 100px auto;
+}
+.login {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px;
+    font-size: larger;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    align-self: center;
+}
+.register {
+    text-decoration: none;
+    color: blue;
+    align-self: center;
+
+}
