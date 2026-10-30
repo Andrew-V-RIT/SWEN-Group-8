@@ -17,18 +17,36 @@
             <a class = "navbarA" href="">Database</a>
             <a class = "navbarA" href="">Review Emails</a>
         </div>
-
         <div style="width: 200px;"></div>
     </nav>
 
-    <form>
-            <input class="login_feild" type="text" id="email" name="email" placeholder="Email" required> </input>
-            <input class="login_feild" type="text" id="first" name="first" placeholder="First Name" required> </input>
-            <input class="login_feild" type="text" id="last" name="last" placeholder="Last Name" required> </input>
-            <input class="login_feild" type="text" id="phone" name="phone" placeholder="Phone Number" required> </input>
-            <input class="login_feild" type="text" id="pass" name="pass" placeholder="Password" required> </input>
-            <a class="login" href="PLACEHOLDER_FORUM PAGE">Register</a>
-            <a class="register" href="login.html">Already have an account? Click here.</a>
+    <form id="form">
+        <input class="login_feild" type="text" id="email" name="email" placeholder="Email" required> </input>
+        <input class="login_feild" type="text" id="first" name="first" placeholder="First Name" required> </input>
+        <input class="login_feild" type="text" id="last" name="last" placeholder="Last Name" required> </input>
+        <input class="login_feild" type="text" id="phone" name="phone" placeholder="Phone Number" required> </input>
+        <input class="login_feild" type="text" id="user" name="user" placeholder="Username" required> </input>
+        <input class="login_feild" type="text" id="pass" name="pass" placeholder="Password" required> </input>
+        <button class="login" type="submit" id="register" onclick="window.location.href = 'index.html';">Login</button>
+        <a class="register" href="login.html">Already have an account? Click here.</a>
     </form>
+
+    <script>
+        const form = document.getElementById('form');
+        const user = document.getElementById('user');
+        const email = document.getElementById('email');
+        const phone = document.getElementById('phone');
+        
+
+        form.addEventListener('submit', function(){
+            const formData = FormData(event.target);
+
+            localStorage.setItem('User',FormData.get('user').value);
+            localStorage.setItem('Email',FormData.get('email').value);
+            localStorage.setItem('Phone', FormData.get('phone').value);
+
+            window.location.href = 'index.html';
+        });
+    </script>
 </body>
 </html>

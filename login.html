@@ -22,10 +22,24 @@
     </nav>
 
     <form>
-            <input class="login_feild" type="text" id="email" name="email" placeholder="Email" required> </input>
-            <input class="login_feild" type="text" id="pass" name="pass" placeholder="Password" required> </input>
-            <a class="login" href="PLACEHOLDER_FORUM PAGE">Login</a>
-            <a class="register" href="register.html">Don't have an account. Click Here</a>
+        <input class="login_feild" type="text" id="user" name="user" placeholder="Username" required> </input>
+        <input class="login_feild" type="text" id="pass" name="pass" placeholder="Password" required> </input>
+        <button class="login" id="login" onclick="window.location.href='index.html';">Login</button>
+        <a class="register" href="register.html">Don't have an account. Click Here</a>
     </form>
+    <script>
+        
+        const button = document.getElementById('login');
+        const user = document.getElementById('user')
+        
+
+        button.addEventListener('click', function(event){
+            event.preventDefault();
+
+            localStorage.setItem('User', inputElement.value());
+            localStorage.setItem('Email', 'example@Symbolics.com')
+            localStorage.setItem('Phone', 5858675309);
+        });
+    </script>
 </body>
 </html>
