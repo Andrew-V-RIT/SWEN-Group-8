@@ -11,7 +11,7 @@
     <nav class="navbar">
         <h2><a class="home" href="index.html">THE FRAUD FILES</a></h2>
         <div class="navbarDIV"> 
-            <a class = "navbarA" href="">Account</a>
+            <a class = "navbarA" href="account.html">Account</a>
             <a class = "navbarA" href="">Forum</a>
             <a class = "navbarA" href="">Leadership</a>
             <a class = "navbarA" href="">Database</a>
@@ -21,24 +21,18 @@
         <div style="width: 200px;"></div>
     </nav>
 
-    <form>
-        <input class="login_feild" type="text" id="user" name="user" placeholder="Username" required> </input>
-        <input class="login_feild" type="text" id="pass" name="pass" placeholder="Password" required> </input>
-        <button class="login" id="login" onclick="window.location.href='index.html';">Login</button>
+    <form id="form" class="login_form">
+        <input class="login_feild" type="text" id="user" name="user" placeholder="Username" required>
+        <input class="login_feild" type="password" id="pass" name="pass" placeholder="Password" required>
+        <button class="login" type="submit" id="login">Login</button>
         <a class="register" href="register.html">Don't have an account. Click Here</a>
     </form>
     <script>
-        
-        const button = document.getElementById('login');
-        const user = document.getElementById('user')
-        
+        const registerForm = document.getElementById('form');
 
-        button.addEventListener('click', function(event){
+        registerForm.addEventListener('submit', function (event) {
             event.preventDefault();
-
-            localStorage.setItem('User', inputElement.value());
-            localStorage.setItem('Email', 'example@Symbolics.com')
-            localStorage.setItem('Phone', 5858675309);
+            window.location.href = 'index.html';
         });
     </script>
 </body>
